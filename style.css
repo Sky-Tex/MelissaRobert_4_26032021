@@ -63,6 +63,8 @@ a:hover {
     font-size: 3.5rem;
     font-weight: 700;
     max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
     
 }
 
@@ -831,7 +833,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #fdfdfd!important;
 }
 
 .tc-black {
@@ -861,7 +863,7 @@ h4 {
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .ltc-white {
