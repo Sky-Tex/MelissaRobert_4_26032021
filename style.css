@@ -763,7 +763,7 @@ h3 {
 .col-sm-12 .white12{
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: black!important;
+    color: white!important;
 }
 
 .icon-md{
@@ -837,7 +837,7 @@ h4 {
 }
 
 .tc-black {
-    color: black!important;
+    color: white!important;
 }
 
 .text-s2{
@@ -857,7 +857,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #B5623A;;
+    background: #9F512D;;
     color: #FFFFFF!important;
 }
 
