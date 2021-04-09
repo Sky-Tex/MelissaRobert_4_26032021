@@ -3,8 +3,6 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 a,
@@ -32,9 +30,6 @@ a:hover {
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -56,6 +51,43 @@ a:hover {
     padding: 20px 50px;
 }
 
+.col-sm-14{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.col-sm-14 H2, .col-sm-12 h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    max-width: 800px;
+    
+}
+
+.col-sm-12 ul{
+    font-size: 1.8rem;
+}
+
+.col-sm-12 a{
+    font-size: 2rem;
+}
+
+.col-sm-12 .cont_a{
+    display: flex;
+    justify-content: center;
+}
+.col-sm-14 .customer-opinion{
+    font-size: 2rem;
+    font-style: italic;
+    max-width: 600px;
+}
+
+.customer-opinion + p{
+    font-size: 1.5rem;
+}
+
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
@@ -66,9 +98,6 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
     background-size: auto!important;
 }
 
@@ -93,6 +122,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    opacity: 0.5;
 }
 
 .b-parallax {
@@ -382,7 +412,7 @@ a:hover {
         text-align: center;
     }
     .nav-center .navbar-header {
-        width: 100%;
+    width: 100%;
     }
     .nav-center .navbar-header,
     .nav-center .navbar-brand,
@@ -556,8 +586,11 @@ a[data-lightbox]:hover::before {
 
 a[data-lightbox]:hover img {
     opacity: 0.6;
-    -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
+}
+
+.p2presentation{
+    font-size: 1.8rem!important;
 }
 
 #lightbox-modal {
@@ -584,6 +617,7 @@ a[data-lightbox]:hover img {
     left: 15px;
     right: 15px;
     bottom: 5px;
+    font-size: 1.5rem;
 }
 
 .close-lightbox {
@@ -677,7 +711,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.8rem;
 }
 
 .tight-width-whitespace {
@@ -702,6 +736,8 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 h2 {
@@ -714,6 +750,26 @@ h3 {
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
+}
+
+.presentation1{
+    font-size: 1.8rem!important;
+    color: white!important;
+    text-align: center;
+}
+
+.col-sm-12 .white12{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: black!important;
+}
+
+.icon-md{
+    color: black!important;
+}
+
+.icon-md:hover{
+    color: white!important;
 }
 
 .med-width-whitespace {
@@ -776,6 +832,26 @@ h4 {
 
 .tc-white {
     color: #F3976C!important;
+}
+
+.tc-black {
+    color: black!important;
+}
+
+.text-s2{
+    font-size: 1.4rem;
+}
+
+.text-s3{
+    font-size: 1.4rem;
+}
+
+.text-s3 a{
+    font-size: 1.8rem;
+}
+
+.text-s4{
+    font-size: 1.4rem;
 }
 
 .btn-atomic-tangerine {
@@ -872,10 +948,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +956,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -920,8 +990,6 @@ h4 {
     .site-navigation {
         position: inherit;
         transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
     }
     .nav > li {
         margin-top: 0;
@@ -958,7 +1026,6 @@ h4 {
     .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
-        -webkit-box-shadow: none;
         box-shadow: none;
     }
     .navbar-brand img {
