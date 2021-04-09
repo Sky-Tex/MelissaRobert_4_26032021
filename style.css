@@ -400,7 +400,6 @@ a:hover {
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
@@ -583,7 +582,6 @@ a[data-lightbox]:hover::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
 }
 
 a[data-lightbox]:hover img {
@@ -926,13 +924,13 @@ h4 {
     }
 }
 
-@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px){
     .b-parallax {
         background-attachment: scroll;
     }
@@ -950,6 +948,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
